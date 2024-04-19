@@ -1,14 +1,21 @@
 import './App.css';
 import Footer from './Components/Footer';
+import Card from './Components/Card';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>JITZ DB. The Jiu Jitsu database.</p>
-      </header>
-      <Footer/>
-    </div>
+    <>
+
+    
+    <Card />
+   
+      
+      <Footer />
+    </>
+
+
   );
 }
 
