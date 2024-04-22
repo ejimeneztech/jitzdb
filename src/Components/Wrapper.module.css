@@ -6,3 +6,10 @@
     padding: 20px;
     flex-direction: column;
 }
+
+button {
+    border-radius: 8px;
+    position: absolute;
+    right: 800px;
+    top: 38px;
+}
