@@ -6,6 +6,7 @@ import Footer from './Components/Footer';
 import Card from './Components/Card';
 import SearchBar from './Components/SearchBar';
 import PlusButton from './Components/PlusButton';
+import Modal from './Components/Modal';
 
 
 
@@ -25,14 +26,17 @@ function App() {
     console.log(isClicked);
   }
 
-
+const handleClose = () => {
+  setIsClicked(!isClicked);
+}
 
 
   return (
     <>
       <Wrapper>
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar onSearch={handleSearch} onStatusChange={isClicked} />
         <PlusButton onClick={handleClick} />
+        <Modal isOpen={isClicked} onClose={handleClose}/>
         <Card />
       </Wrapper>
       <Footer />

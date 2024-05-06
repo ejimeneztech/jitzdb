@@ -1,6 +1,6 @@
 import styles from './SearchBar.module.css';
 import React, {useState} from 'react';
-import Modal from './Modal';
+
 
 export default function SearchBar(props) {
     const [query, setQuery] = useState('');
@@ -11,11 +11,6 @@ export default function SearchBar(props) {
         props.onSearch(event.target.value);
     }
 
-    // const handleClose = () => {
-
-    //     setOpenStatus(!isClicked);
-    //   }
-
       
     return (
         <>
@@ -23,7 +18,6 @@ export default function SearchBar(props) {
             placeholder="Search..."
             value={query}
             onChange={handleChange}/>
-            <Modal isOpen={openStatus}/>
         </>
     )
 }
