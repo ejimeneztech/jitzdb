@@ -10,14 +10,7 @@ export default function Modal(props) {
   return (
     <div className={styles.modal}>
       <div className={styles.modalContent}>
-        <span onClick={handleClick} className={styles.close}>
-          x
-        </span>
-        <p>Does this work ?</p>
-      </div>
-
-      <div className={styles.modalContent}>
-        <span class="close">&times;</span>
+        <span class="close" onClick={handleClick}>x</span>
         <h2>Modal Title</h2>
         <form id="myForm">
           <label for="name">Name:</label>
