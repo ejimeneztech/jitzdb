@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	export let data; // This holds the techs data
 	let loading = true;
 
@@ -6,7 +7,7 @@
 	const { techs } = data;
 
 	// Simulate loading after onMount to show "Loading..." text for a brief moment
-	import { onMount } from 'svelte';
+
 	onMount(() => {
 		loading = false; // Set loading to false once component is mounted
 	});
