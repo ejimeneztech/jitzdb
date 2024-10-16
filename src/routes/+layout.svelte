@@ -4,3 +4,9 @@
     <a href="/add">Add Technique</a>
 </nav>
 <slot></slot>
+
+<style>
+    nav {
+        text-align: center;
+    }
+</style>
