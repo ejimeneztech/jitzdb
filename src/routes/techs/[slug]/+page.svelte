@@ -13,3 +13,14 @@
 		{/each}
 	</ol>
 {/if}
+
+
+<style>
+	h1 {
+		text-align: center;
+	}
+
+	ol {
+		align-items: center;
+	}
+</style>

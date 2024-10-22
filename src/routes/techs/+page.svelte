@@ -33,6 +33,9 @@
 {/if}
 
 <style>
+	h1 {
+		text-align: center;
+	}
 	ul {
 		list-style-type: none;
 		padding: 0;
@@ -42,12 +45,19 @@
 		margin: 10px 0;
 	}
 
+	.tech-list {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.card {
 		background-color: #f4f4f4;
 		padding: 20px;
 		border-radius: 5px;
 		cursor: pointer;
 		transition: transform 0.2s;
+		width: 200px;
+		margin: 10px;
 	}
 
 	.card:hover {

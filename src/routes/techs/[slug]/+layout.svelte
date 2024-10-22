@@ -10,6 +10,9 @@
 
 
 <style>
+	.layout {
+		
+	}
 	@media (min-width: 640px) {
 		.layout {
 			display: grid;
