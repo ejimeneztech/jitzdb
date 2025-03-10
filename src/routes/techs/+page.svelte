@@ -47,7 +47,11 @@
 
 	.tech-list {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		list-style: none;
+		padding: 0;
+		/* justify-content: space-between; */
 	}
 
 	.card {
